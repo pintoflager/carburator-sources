@@ -1,0 +1,13 @@
+collection = "provisioners"
+version = "0.1.0"
+
+[[items]]
+name = "api"
+repository = "https://github.com/pintoflager/carburator-provisioner-api.git"
+requirements = []
+
+[[items]]
+name = "terraform"
+repository = "https://github.com/pintoflager/carburator-provisioner-terraform.git"
+requirements = ["terraform"]
+

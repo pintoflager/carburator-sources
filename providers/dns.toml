@@ -1,0 +1,14 @@
+collection = "providers"
+version = "0.1.0"
+
+[[items]]
+name = "localhost"
+repository = "https://github.com/pintoflager/carburator-provider-dns-localhost.git"
+targets = ["development"]
+requirements = []
+
+[[items]]
+name = "hetzner"
+repository = "https://github.com/pintoflager/carburator-provider-dns-hezner.git"
+targets = ["production", "staging"]
+requirements = []

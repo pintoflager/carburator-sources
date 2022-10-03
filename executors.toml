@@ -1,0 +1,8 @@
+collection = "executors"
+version = "0.1.0"
+
+[[items]]
+name = "ansible"
+repository = "https://github.com/pintoflager/carburator-executor-ansible.git"
+requirements = ["ansible", "ansible-runner", "python3"]
+
