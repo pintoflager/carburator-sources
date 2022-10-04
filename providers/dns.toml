@@ -1,6 +1,6 @@
 collection = "providers_dns"
 
-[[items]]
+[[package]]
 name = "localhost"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-dns-localhost.git"
@@ -8,21 +8,21 @@ targets = ["development"]
 requirements = []
 
 # Example:
-# [[items.secret]]
+# [[package.secret]]
 # key = "localhost_dns_user"
 # prompt = "DNS username managing localhost private hostnames."
 
-# [[items.secret]]
+# [[package.secret]]
 # key = "localhost_dns_pass"
 # prompt = "Password for DNS manager user"
 
-[[items]]
+[[package]]
 name = "hetzner"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-dns-hezner.git"
 targets = ["production", "staging"]
 requirements = []
 
-[[items.secret]]
+[[package.secret]]
 key = "hetzner_dns_apikey"
 prompt = "Hetzner DNS API key for managing domain names."

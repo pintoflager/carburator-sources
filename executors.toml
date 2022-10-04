@@ -1,6 +1,6 @@
 collection = "executors"
 
-[[items]]
+[[package]]
 name = "ansible"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-ansible.git"

@@ -1,13 +1,13 @@
 collection = "provisioners"
 
-[[items]]
+[[package]]
 name = "api"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provisioner-api.git"
 targets = ["production", "staging"]
 requirements = []
 
-[[items]]
+[[package]]
 name = "terraform"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provisioner-terraform.git"

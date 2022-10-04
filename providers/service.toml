@@ -1,6 +1,6 @@
 collection = "providers_service"
 
-[[items]]
+[[package]]
 name = "localhost"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-service-localhost.git"
@@ -8,13 +8,13 @@ repository = "https://github.com/pintoflager/carburator-provider-service-localho
 targets = ["development"]
 requirements = []
 
-[[items]]
+[[package]]
 name = "hetzner"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-service-hezner.git"
 targets = ["production", "staging"]
 requirements = []
 
-[[items.secret]]
+[[package.secret]]
 key = "hetzner_cloud_apikey"
 prompt = "Hetzner cloud API key for provisioning resources."

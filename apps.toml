@@ -1,19 +1,19 @@
 collection = "apps"
 
-[[items]]
+[[package]]
 name = "haproxy"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-app-haproxy.git"
 targets = ["production", "staging"]
 
-[[items.requirements]]
+[[package.requirements]]
 local = []
 remote = []
 
-[[items.secret]]
+[[package.secret]]
 key = "haproxy_user"
 generate = true
 
-[[items.secret]]
+[[package.secret]]
 key = "haproxy_pass"
 generate = true
