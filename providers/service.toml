@@ -4,7 +4,6 @@ collection = "providers_service"
 name = "localhost"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-service-localhost.git"
-# archive = "https://github.com/pintoflager/carburator-provider-service-hezner/archive/refs/heads/main.zip"
 targets = ["development"]
 requirements = []
 

@@ -7,3 +7,9 @@ repository = "https://github.com/pintoflager/carburator-executor-ansible.git"
 targets = ["production", "staging"]
 requirements = ["ansible", "ansible-runner", "python3"]
 
+[[package]]
+name = "shell"
+version = "0.1.0"
+repository = "https://github.com/pintoflager/carburator-executor-shell.git"
+targets = ["production", "staging"]
+requirements = ["bash"]

@@ -12,8 +12,8 @@ remote = []
 
 [[package.secret]]
 key = "haproxy_user"
-generate = true
+generate = "user" # TODO: not making any sense. username is not secret.
 
 [[package.secret]]
 key = "haproxy_pass"
-generate = true
+generate = "password"
