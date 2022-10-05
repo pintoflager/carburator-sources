@@ -10,10 +10,12 @@ targets = ["production", "staging"]
 local = []
 remote = []
 
-[[package.secret]]
-key = "haproxy_user"
-generate = "user" # TODO: not making any sense. username is not secret.
+[[package.user]]
+name = "haproxy"
 
 [[package.secret]]
-key = "haproxy_pass"
-generate = "password"
+name = "haproxy_user"
+
+[[package.secret.line]]
+key = "password"
+value = "generate!(password)"

@@ -24,5 +24,8 @@ targets = ["production", "staging"]
 requirements = []
 
 [[package.secret]]
-key = "hetzner_dns_apikey"
-prompt = "Hetzner DNS API key for managing domain names."
+name = "hetzner_dns_apikey"
+
+[[package.secret.line]]
+key = "apikey"
+value = "prompt!(Hetzner DNS API key for managing domain names.)"
