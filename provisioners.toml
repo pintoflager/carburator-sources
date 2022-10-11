@@ -1,4 +1,5 @@
 collection = "provisioners"
+path = "/provisioners"
 
 [[package]]
 name = "api"

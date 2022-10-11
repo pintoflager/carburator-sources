@@ -1,4 +1,5 @@
-collection = "providers_service"
+collection = "service"
+path = "/providers/service"
 
 [[package]]
 name = "localhost"
