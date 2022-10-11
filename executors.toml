@@ -1,5 +1,4 @@
 collection = "executors"
-path = "/executors"
 
 [[package]]
 name = "ansible"
