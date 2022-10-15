@@ -1,24 +1,14 @@
 collection = "service"
-path = "providers"
+path = "providers/service"
 
 [[package]]
 name = "localhost"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-service-localhost.git"
 targets = ["development"]
-requirements = []
 
 [[package]]
 name = "hetzner"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-service-hezner.git"
 targets = ["production", "staging"]
-requirements = []
-
-[[package.secret]]
-name = "hetzner_cloud_apikey"
-
-[[package.secret.line]]
-key = "apikey"
-value = "prompt!(secret)" # Idea is to use prompt mods here; secret, password, text...
-prompt = "Hetzner cloud API key for provisioning resources."
