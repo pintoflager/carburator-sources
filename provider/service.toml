@@ -10,5 +10,5 @@ targets = ["development"]
 [[package]]
 name = "hetzner"
 version = "0.1.0"
-repository = "https://github.com/pintoflager/carburator-provider-service-hezner.git"
+repository = "https://github.com/pintoflager/carburator-provider-service-hetzner.git"
 targets = ["production", "staging"]
