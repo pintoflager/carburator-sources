@@ -2,13 +2,13 @@ collection = "dns"
 path = "providers/dns"
 
 [[package]]
-name = "localhost"
+name = "mkcert"
 version = "0.1.0"
-repository = "https://github.com/pintoflager/carburator-provider-dns-localhost.git"
-targets = ["development"]
+repository = "https://github.com/pintoflager/carburator-provider-dns-mkcert.git"
+targets = ["playground"]
 
 [[package]]
 name = "hetzner"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-dns-hetzner.git"
-targets = ["production", "staging"]
+targets = ["commander", "worker"]

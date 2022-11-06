@@ -5,4 +5,4 @@ path = "executors"
 name = "ansible"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-ansible.git"
-targets = ["production", "staging"]
+targets = ["commander"]
