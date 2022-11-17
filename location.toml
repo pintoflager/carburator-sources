@@ -1,0 +1,56 @@
+default = "europe"
+
+[[location]]
+name = "europe"
+description = "Central / south Europe: Germany, France, Netherlands, Switzerland, UK..."
+default = true
+
+[[location]]
+name = "scandinavia"
+description = "Northern Europe: Finland, Sweden, Norway..."
+default = false
+
+[[location]]
+name = "asia"
+description = "Asia: Hong Kong, Japan, India, China, South Korea..."
+default = false
+
+[[location]]
+name = "oceania"
+description = "Oceania: Australia, New Zealand, Singapore, Malaysia, Thailand..."
+default = false
+
+[[location]]
+name = "north_america_west"
+description = "Western North America: US/Los Angeles, Canada/Vancouver..."
+default = false
+
+[[location]]
+name = "north_america_east"
+description = "Eastern North America: US/Miami, Canada/Toronto..."
+default = false
+
+[[location]]
+name = "latin_america_north"
+description = "Northern Latin America: Mexico, Panama, Colombia..."
+default = false
+
+[[location]]
+name = "latin_america_south"
+description = "Southern Latin America: Brazil, Peru, Argentina, Chile, Uruguay..."
+default = false
+
+[[location]]
+name = "africa_west"
+description = "Western Africa: Nigeria"
+default = false
+
+[[location]]
+name = "africa_east"
+description = "Eastern Africa: Kenya, Mauritius..."
+default = false
+
+[[location]]
+name = "africa_south"
+description = "Southern Africa: South Africa, Angola, Mosambique..."
+default = false

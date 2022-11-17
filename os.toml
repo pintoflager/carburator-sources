@@ -1,0 +1,32 @@
+default = "debian"
+
+[[os]]
+name = "debian-10"
+description = "Linux, Debian 10, Buster"
+default = false
+
+[[os]]
+name = "debian-11"
+description = "Linux, Debian 11, Bullseye"
+default = true
+
+[[os]]
+name = "ubuntu-18.04"
+description = "Linux, Ubuntu 18.04"
+default = false
+
+[[os]]
+name = "ubuntu-20.04"
+description = "Linux, Ubuntu 20.04"
+default = false
+
+[[os]]
+name = "ubuntu-22.04"
+description = "Linux, Ubuntu 22.04"
+default = false
+
+[[os]]
+name = "fedora-36"
+description = "Linux, Fedora 36"
+default = false
+
