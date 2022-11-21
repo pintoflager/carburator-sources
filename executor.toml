@@ -6,3 +6,15 @@ name = "ansible"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-ansible.git"
 targets = ["commander"]
+
+[[package]]
+name = "bash"
+version = "0.1.0"
+repository = "https://github.com/pintoflager/carburator-executor-bash.git"
+targets = ["worker"]
+
+[[package]]
+name = "python"
+version = "0.1.0"
+repository = "https://github.com/pintoflager/carburator-executor-python.git"
+targets = ["worker"]
