@@ -1,0 +1,16 @@
+worker_ipv4 = true
+worker_ipv6 = true
+worker_private_net = true
+worker_group_names = ["apple", "apricot", "avocado", "banana", "blackberry",
+	"blueberry", "carambola", "cherry", "cloudberry", "coconut", "cranberry", "damson", "dates",
+	"dragonfruit", "elderberry", "feijoa", "fig", "grape", "grapefruit", "grapes", "grewia",
+	"guava", "hanepoot", "huckleberry", "jackfruit", "jamun", "jicama", "jujube", "kiwano", "kiwi",
+	"lemon", "lime", "longan", "loquat", "lychee", "mandarin", "mango", "melon", "mulberry",
+	"muskmelon", "nance", "nectarine", "olive", "orange", "papaya", "peach", "pear", "persimmon",
+	"pineapple", "plum", "pomegranate", "pumpkin", "quince", "raspberry", "sapodilla", "satsuma",
+	"shaddock", "soursop", "strawberry", "sugarcane", "tamarillo", "tamarind", "tangerine",
+	"watermelon"
+]
+commander_ipv4 = true
+commander_ipv6 = true
+commander_private_net = true
