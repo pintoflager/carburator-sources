@@ -26,4 +26,4 @@ group_names = ["apple", "apricot", "avocado", "banana", "blackberry",
 ipv4 = true
 ipv6 = true
 private_net = true
-group_names = ["devs", "watchdogs]
+group_names = ["devs", "watchdogs"]
