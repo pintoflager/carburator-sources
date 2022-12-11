@@ -4,6 +4,7 @@ protocol = "tcp"
 
 [scripts]
 executor = "python"
+package_init = "install"
 exitcode_not_found = 100
 exitcode_can_retry = 110
 exitcode_unrecoverable = 120
