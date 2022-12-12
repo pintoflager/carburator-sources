@@ -1,14 +1,14 @@
-collection = "dns"
+collection = "DnsProvider"
 path = "providers/dns"
 
 [[package]]
 name = "mkcert"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-dns-mkcert.git"
-targets = ["playground"]
+targets = ["Playground"]
 
 [[package]]
 name = "hetzner"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-dns-hetzner.git"
-targets = ["commander", "worker"]
+targets = ["Commander", "Worker"]

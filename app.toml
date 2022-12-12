@@ -1,10 +1,10 @@
-collection = "app"
+collection = "App"
 
 [[package]]
 name = "haproxy"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-app-haproxy.git"
-targets = ["worker"]
+targets = ["Worker"]
 priority = 10
 dependencies = []
 provides = ["loadbalancer"]

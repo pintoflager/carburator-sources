@@ -1,16 +1,16 @@
-collection = "provisioner"
+collection = "Provisioner"
 path = "provisioners"
 
 [[package]]
 name = "terraform"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provisioner-terraform.git"
-targets = ["commander"]
-supports = ["service"]
+targets = ["Commander"]
+supports = ["ServiceProvider"]
 
 [[package]]
 name = "api"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provisioner-api.git"
-targets = ["commander"]
-supports = ["dns"]
+targets = ["Commander"]
+supports = ["DnsProvider"]
