@@ -5,10 +5,10 @@ path = "providers/dns"
 name = "mkcert"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-dns-mkcert.git"
-targets = ["Playground"]
+project_roles = ["Playground"]
 
 [[package]]
 name = "hetzner"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-dns-hetzner.git"
-targets = ["Commander", "Worker"]
+project_roles = ["Commander", "Worker"]

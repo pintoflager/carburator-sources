@@ -5,10 +5,10 @@ path = "providers/service"
 name = "localhost"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-service-localhost.git"
-targets = ["Playground"]
+project_roles = ["Playground"]
 
 [[package]]
 name = "hetzner"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provider-service-hetzner.git"
-targets = ["Commander"]
+project_roles = ["Commander"]
