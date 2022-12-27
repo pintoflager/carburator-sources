@@ -11,10 +11,10 @@ project_roles = ["Commander"]
 name = "bash"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-bash.git"
-project_roles = ["Worker"]
+project_roles = ["Commander", "Worker"]
 
 [[package]]
 name = "python"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-python.git"
-project_roles = ["Worker"]
+project_roles = ["Commander", "Worker"]
