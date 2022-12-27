@@ -1,6 +1,4 @@
-[ssh_port]
-number = 22
-protocol = "tcp"
+ssh_port = 22
 
 [scripts]
 executor = "python"
