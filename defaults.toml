@@ -26,3 +26,5 @@ ipv4 = true
 ipv6 = true
 private_net = true
 group_names = ["devs", "watchdogs"]
+
+[providers]
