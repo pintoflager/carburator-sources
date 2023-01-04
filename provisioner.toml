@@ -5,12 +5,12 @@ path = "provisioners"
 name = "terraform"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provisioner-terraform.git"
-project_roles = ["Commander"]
+platforms = ["Commander"]
 filter = ["ProviderType=ServiceProvider"]
 
 [[package]]
 name = "api"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-provisioner-api.git"
-project_roles = ["Commander"]
+platforms = ["Commander"]
 filter = ["ProviderType=DnsProvider"]

@@ -5,16 +5,16 @@ path = "executors"
 name = "ansible"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-ansible.git"
-project_roles = ["Commander"]
+platforms = ["Commander"]
 
 [[package]]
 name = "bash"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-bash.git"
-project_roles = ["Commander", "Worker"]
+platforms = ["Commander", "Worker"]
 
 [[package]]
 name = "python"
 version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-python.git"
-project_roles = ["Commander", "Worker"]
+platforms = ["Commander", "Worker"]
