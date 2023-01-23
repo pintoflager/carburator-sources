@@ -2,7 +2,6 @@ collection = "App"
 
 [[package]]
 name = "haproxy"
-version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-app-haproxy.git"
 platforms = ["Worker"]
 priority = 10

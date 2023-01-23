@@ -3,18 +3,15 @@ path = "executors"
 
 [[package]]
 name = "ansible"
-version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-ansible.git"
 platforms = ["Commander"]
 
 [[package]]
 name = "bash"
-version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-bash.git"
 platforms = ["Commander", "Worker"]
 
 [[package]]
 name = "python"
-version = "0.1.0"
 repository = "https://github.com/pintoflager/carburator-executor-python.git"
 platforms = ["Commander", "Worker"]

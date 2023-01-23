@@ -1,0 +1,7 @@
+collection = "GitProvider"
+path = "providers/git"
+
+[[package]]
+name = "github"
+repository = "https://github.com/pintoflager/carburator-provider-github.git"
+platforms = ["Commander"]
