@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 
-# This script runs as a root on a remote node during the project installation.
+# This script is copied to project hooks and runs as a root on a remote node
+# during the project installation.
 
-# It should handle the most critical setup tasks, mainly make sure our SSH port
+# It should handle the most critical node setup tasks, mainly make sure our SSH port
 # is not blocked by a firewall.
 
 # Carburator has set up node's SSH port and restarted sshd service before this
