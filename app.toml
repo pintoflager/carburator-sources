@@ -4,6 +4,10 @@ collection = "App"
 name = "haproxy"
 repository = "https://github.com/pintoflager/carburator-app-haproxy.git"
 platforms = ["Worker"]
-priority = 10
-dependencies = []
-provides = ["loadbalancer"]
+filter = ["Provides=proxy"]
+
+[[package]]
+name = "nginx"
+repository = "https://github.com/pintoflager/carburator-app-nginx.git"
+platforms = ["Worker"]
+filter = ["Provides=proxy"]
