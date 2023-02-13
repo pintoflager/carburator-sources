@@ -4,19 +4,19 @@ path = "executors"
 [[package]]
 name = "sh"
 repository = "https://github.com/pintoflager/carburator-executor-sh.git"
-platforms = ["Commander", "Worker"]
+platforms = ["Client", "Commander", "Worker"]
 
 [[package]]
 name = "ansible"
 repository = "https://github.com/pintoflager/carburator-executor-ansible.git"
-platforms = ["Commander"]
+platforms = ["Client", "Commander"]
 
 [[package]]
 name = "bash"
 repository = "https://github.com/pintoflager/carburator-executor-bash.git"
-platforms = ["Commander", "Worker"]
+platforms = ["Client", "Commander", "Worker"]
 
 [[package]]
 name = "python"
 repository = "https://github.com/pintoflager/carburator-executor-python.git"
-platforms = ["Commander", "Worker"]
+platforms = ["Client", "Commander", "Worker"]
