@@ -1,6 +1,12 @@
 collection = "App"
 
 [[package]]
+name = "firewalld"
+repository = "https://github.com/pintoflager/carburator-app-firewalld.git"
+platforms = ["Commander", "Worker"]
+filter = ["Provides=firewall"]
+
+[[package]]
 name = "haproxy"
 repository = "https://github.com/pintoflager/carburator-app-haproxy.git"
 platforms = ["Worker"]
