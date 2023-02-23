@@ -1,5 +1,8 @@
 collection = "App"
 
+### private repositories:
+# filter = ["SshKey=/full/path/to/ssh/keys.toml"]
+
 [[package]]
 name = "firewalld"
 repository = "https://github.com/pintoflager/carburator-app-firewalld.git"
