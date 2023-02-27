@@ -15,13 +15,13 @@ proxies = 2
 [node.server]
 ipv4 = true
 ipv6 = true
-group_names = ["apple", "apricot", "avocado", "banana", "blackberry",
+group_names = ["apricot", "avocado", "banana", "blackberry",
 	"blueberry", "carambola", "cherry", "cloudberry", "coconut", "cranberry", "damson", "dates",
 	"dragonfruit", "elderberry", "feijoa", "fig", "grape", "grapefruit", "grapes", "grewia",
 	"guava", "hanepoot", "huckleberry", "jackfruit", "jamun", "jicama", "jujube", "kiwano", "kiwi",
 	"lemon", "lime", "longan", "loquat", "lychee", "mandarin", "mango", "melon", "mulberry",
 	"muskmelon", "nance", "nectarine", "olive", "orange", "papaya", "peach", "pear", "persimmon",
-	"pineapple", "plum", "pomegranate", "pumpkin", "quince", "raspberry", "sapodilla", "satsuma",
+	"pineapple", "plum", "pomegranate", "pumpkin", "quince", "sapodilla", "satsuma",
 	"shaddock", "soursop", "strawberry", "sugarcane", "tamarillo", "tamarind", "tangerine",
 	"watermelon"]
 

@@ -4,11 +4,11 @@ path = "provisioners"
 [[package]]
 name = "terraform"
 repository = "https://github.com/pintoflager/carburator-provisioner-terraform.git"
-platforms = ["Client", "Commander"]
+platforms = ["Client"]
 filter = ["ProviderType=ServiceProvider"]
 
 [[package]]
 name = "api"
 repository = "https://github.com/pintoflager/carburator-provisioner-api.git"
-platforms = ["Client", "Commander"]
+platforms = ["Client"]
 filter = ["ProviderType=DnsProvider"]

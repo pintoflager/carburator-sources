@@ -4,4 +4,4 @@ path = "providers/service"
 [[package]]
 name = "hetzner"
 repository = "https://github.com/pintoflager/carburator-provider-service-hetzner.git"
-platforms = ["Client", "Commander"]
+platforms = ["Client"]

@@ -6,17 +6,17 @@ collection = "App"
 [[package]]
 name = "firewalld"
 repository = "https://github.com/pintoflager/carburator-app-firewalld.git"
-platforms = ["Commander", "Worker"]
+platforms = ["Client", "Server"]
 filter = ["Provides=firewall"]
 
 [[package]]
 name = "haproxy"
 repository = "https://github.com/pintoflager/carburator-app-haproxy.git"
-platforms = ["Worker"]
+platforms = ["Server"]
 filter = ["Provides=proxy"]
 
 [[package]]
 name = "nginx"
 repository = "https://github.com/pintoflager/carburator-app-nginx.git"
-platforms = ["Worker"]
+platforms = ["Server"]
 filter = ["Provides=proxy"]

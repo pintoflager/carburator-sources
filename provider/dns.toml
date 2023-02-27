@@ -4,4 +4,4 @@ path = "providers/dns"
 [[package]]
 name = "hetzner"
 repository = "https://github.com/pintoflager/carburator-provider-dns-hetzner.git"
-platforms = ["Client", "Commander", "Worker"]
+platforms = ["Client", "Server"]
