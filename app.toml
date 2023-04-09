@@ -10,13 +10,7 @@ platforms = ["Client", "Server"]
 filter = ["Provides=firewall"]
 
 [[package]]
-name = "haproxy"
-repository = "https://github.com/pintoflager/carburator-app-haproxy.git"
-platforms = ["Server"]
-filter = ["Provides=proxy"]
-
-[[package]]
-name = "nginx"
-repository = "https://github.com/pintoflager/carburator-app-nginx.git"
-platforms = ["Server"]
-filter = ["Provides=proxy"]
+name = "tester"
+repository = "https://github.com/pintoflager/carburator-app-tester.git"
+platforms = ["Client", "Server"]
+filter = ["Provides=tester"]
