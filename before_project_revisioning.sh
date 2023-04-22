@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 ### OPTIONAL SCRIPT, DESTROY IF NOT NEEDED ###
 
@@ -16,22 +16,21 @@
 keep_revisions_count=5
 
 # No revisions dir, first round or wiped dir -- nothing to do.
-if [[ ! -d .revisions ]]; then
+if [ ! -d .revisions ]; then
 	exit
 fi
 
 # Latest revision seems to be in place, extract it's modified timestamp and
 # save it with timestamp as it's name.
-if [[ -e .revisions/latest.tar.gz ]]; then
+if [ -e .revisions/latest.tar.gz ]; then
 	modtime=$(stat -c '%y' .revisions/latest.tar.gz | sed "s|[ :.]|-|g")
 
 	mv -f .revisions/latest.tar.gz ".revisions/$modtime.tar.gz"
 fi
 
 # Only keep {x} latest revisions in history.
-cd .revisions
+cd .revisions || exit 120
 c=$((keep_revisions_count + 1))
 
 # List by creation time, take from oldest, run delete
 ls -tp | grep -v '/$' | tail -n +"$c" | xargs -I {} rm -rf -- {}
-
