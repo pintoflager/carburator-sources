@@ -15,7 +15,7 @@ proxies = 2
 [node.server]
 ipv4 = true
 ipv6 = true
-group_names = ["apricot", "avocado", "banana", "blackberry",
+cluster_names = ["apricot", "avocado", "banana", "blackberry",
 	"blueberry", "carambola", "cherry", "cloudberry", "coconut", "cranberry", "damson", "dates",
 	"dragonfruit", "elderberry", "feijoa", "fig", "grape", "grapefruit", "grapes", "grewia",
 	"guava", "hanepoot", "huckleberry", "jackfruit", "jamun", "jicama", "jujube", "kiwano", "kiwi",
@@ -28,6 +28,6 @@ group_names = ["apricot", "avocado", "banana", "blackberry",
 [node.client]
 ipv4 = true
 ipv6 = true
-group_names = ["clients", "watchdogs"]
+cluster_names = ["clients", "watchdogs"]
 
 [providers]
