@@ -17,7 +17,7 @@ keep_revisions_count=5
 
 # No revisions dir, first round or wiped dir -- nothing to do.
 if [ ! -d .revisions ]; then
-	exit
+	exit 0
 fi
 
 # Latest revision seems to be in place, extract it's modified timestamp and
