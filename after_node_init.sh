@@ -2,16 +2,16 @@
 
 
 # This script is copied to project hooks and runs as a root on a remote node
-# during the project installation.
+# during the project registration.
 
-# It should handle the most critical node setup tasks, mainly make sure our SSH port
-# is not blocked by a firewall.
+# It should handle the most critical node setup finalization tasks, mainly it
+# should make sure our SSH port is not blocked by a firewall.
 
-# Carburator has set up node's SSH port and restarted sshd service before this
-# script is uploaded and executed.
+# Init script should of had set up node's SSH port and restarted sshd service
+# before this script is executed.
 
-# Active ssh port can be found from environment variable SSH_PORT and the
-# previously active SSH_PORT_OLD
+# Active ssh port can be found from environment variable 'SSH_PORT' and the
+# previously active port from 'SSH_PORT_OLD' variable.
 
 
 # Ufw, firewall that manages iptables. Usually found from debian world.

@@ -2,9 +2,10 @@ ssh_port = 22
 ssh_password_auth = false
 
 [scripts]
-package_install = "install"
-package_update = "update"
-package_destroy = "destroy"
+register = "register"
+install = "install"
+update = "update"
+destroy = "destroy"
 exitcode_not_found = 100
 exitcode_can_retry = 110
 exitcode_unrecoverable = 120
@@ -16,7 +17,7 @@ proxies = 2
 ipv4 = true
 ipv6 = true
 cluster_names = ["apricot", "avocado", "banana", "blackberry",
-	"blueberry", "carambola", "cherry", "cloudberry", "coconut", "cranberry", "damson", "dates",
+	"blueberry", "carambola", "cherry", "cloudberry", "coconut", "cranberry", "damson",
 	"dragonfruit", "elderberry", "feijoa", "fig", "grape", "grapefruit", "grapes", "grewia",
 	"guava", "hanepoot", "huckleberry", "jackfruit", "jamun", "jicama", "jujube", "kiwano", "kiwi",
 	"lemon", "lime", "longan", "loquat", "lychee", "mandarin", "mango", "melon", "mulberry",
@@ -28,6 +29,6 @@ cluster_names = ["apricot", "avocado", "banana", "blackberry",
 [node.client]
 ipv4 = true
 ipv6 = true
-cluster_names = ["clients", "watchdogs"]
+cluster_names = ["clients"]
 
 [providers]
