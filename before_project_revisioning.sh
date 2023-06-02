@@ -2,7 +2,7 @@
 
 ### OPTIONAL SCRIPT, DESTROY IF NOT NEEDED ###
 
-# This hook script runs as a root on a remote node during the project
+# This script runs as a root on a remote node during the project
 # installation before any changes are made to project files.
 
 # It should handle the logic of keeping revision history larger than 1 revision.

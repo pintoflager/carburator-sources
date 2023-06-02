@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 
-# This script is copied to project hooks and runs as a root on a remote node
-# during the project registration.
+# This script is copied to project event listeners and runs as a root on a remote
+# node during the project registration.
 
 # It should handle the most critical node setup finalization tasks, mainly it
 # should make sure our SSH port is not blocked by a firewall.
