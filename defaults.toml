@@ -14,6 +14,7 @@ exitcode_unrecoverable = 120
 proxies = 2
 
 [node.server]
+hostname_set = false
 ipv4 = true
 ipv6 = true
 cluster_names = ["apricot", "avocado", "banana", "blackberry",

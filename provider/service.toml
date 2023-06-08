@@ -5,3 +5,8 @@ path = "providers/service"
 name = "hetzner"
 repository = "https://github.com/pintoflager/carburator-provider-service-hetzner.git"
 platforms = ["Client"]
+
+[[package]]
+name = "localhost"
+repository = "https://github.com/pintoflager/carburator-provider-service-localhost.git"
+platforms = ["Client"]

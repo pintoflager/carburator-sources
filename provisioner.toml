@@ -8,7 +8,7 @@ platforms = ["Client"]
 filter = ["ProviderType=ServiceProvider"]
 
 [[package]]
-name = "api"
-repository = "https://github.com/pintoflager/carburator-provisioner-api.git"
+name = "qemu"
+repository = "https://github.com/pintoflager/carburator-provisioner-qemu.git"
 platforms = ["Client"]
-filter = ["ProviderType=DnsProvider"]
+filter = ["ProviderType=ServiceProvider"]
