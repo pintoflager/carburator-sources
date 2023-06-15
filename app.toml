@@ -6,7 +6,7 @@ collection = "App"
 
 [[package]]
 name = "git"
-repository = "https://github.com/pintoflager/carburator-app-git/archive/refs/tags/0.1.3.tar.gz"
+repository = "https://github.com/pintoflager/carburator-app-git/archive/refs/tags/0.1.4.tar.gz"
 platforms = ["Client"]
 filter = ["Provides=git"]
 
