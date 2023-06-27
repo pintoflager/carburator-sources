@@ -1,0 +1,14 @@
+[Unit]
+Description={{ description }}
+Wants=network.target
+OnFailure={{ failure_reporter }}
+
+[Service]
+Type={{ service_type | default("simple") }}
+ExecStart={{ executable }}
+Restart={{ service_restart | default("always") }}
+User={{ service_user }}
+Group={{ service_group }}
+
+[Install]
+WantedBy=multi-user.target
