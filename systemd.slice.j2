@@ -1,0 +1,37 @@
+[Unit]
+Description={{ description }}
+OnFailure={{ unit_on_failure }}
+ConditionUser={{ unit_condition_user }}
+Before=slices.target
+
+[Slice]
+{# CPU limiting #}
+{% if slice_cpu_weight or slice_cpu_quota %}
+CPUAccounting=true
+{% endif %}
+{% if slice_cpu_weight %}
+CPUWeight={{ slice_cpu_weight }}
+{% endif %}
+{% if slice_cpu_quota %}
+CPUQuota={{ slice_cpu_quota }}%
+{% endif %}
+{# RAM limiting #}
+{% if slice_memory_high or slice_memory_max %}
+MemoryAccounting=true
+{% endif %}
+{% if slice_memory_high %}
+MemoryHigh={{ slice_memory_high }}
+{% endif %}
+{% if slice_memory_max %}
+MemoryMax={{ slice_memory_max }}
+{% endif %}
+{# TODO: process limits (pids), input/output ops limits? #}
+
+[Install]
+WantedBy={{ install_wanted_by | default("multi-user.target") }}
+{% if install_required_by %}
+RequiredBy={{ install_required_by }}
+{% endif %}
+{% if install_upheld_by %}
+UpheldBy={{ install_upheld_by }}
+{% endif %}

@@ -1,0 +1,50 @@
+[Unit]
+Description={{ description }}
+Requires={{ path_exec_unit }}
+OnFailure={{ unit_on_failure }}
+ConditionUser={{ unit_condition_user }}
+{% if unit_after %}
+OnSuccess={{ unit_on_success }}
+{% endif %}
+{% if unit_wants %}
+Wants={{ unit_wants }}
+{% endif %}
+{% if unit_requires %}
+Requires={{ unit_requires }}
+{% endif %}
+{% if unit_bindsto %}
+BindsTo={{ unit_bindsto }}
+{% endif %}
+{% if unit_before %}
+Before={{ unit_before }}
+{% endif %}
+{% if unit_after %}
+After={{ unit_after }}
+{% endif %}
+
+[Path]
+Unit={{ path_exec_unit }}
+{% if path_exists %}
+PathExists={{ path_exists }}
+{% endif %}
+{% if path_exists_glob %}
+PathExistsGlob={{ path_exists_glob }}
+{% endif %}
+{% if path_changed %}
+PathChanged={{ path_changed }}
+{% endif %}
+{% if path_modified %}
+PathModified={{ path_modified }}
+{% endif %}
+{% if path_directory_not_empty %}
+DirectoryNotEmpty={{ path_directory_not_empty }}
+{% endif %}
+
+[Install]
+WantedBy={{ install_wanted_by | default("multi-user.target") }}
+{% if install_required_by %}
+RequiredBy={{ install_required_by }}
+{% endif %}
+{% if install_upheld_by %}
+UpheldBy={{ install_upheld_by }}
+{% endif %}
