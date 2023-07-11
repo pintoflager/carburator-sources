@@ -1,8 +1,10 @@
 [Unit]
 Description={{ description }}
 Requires={{ path_exec_unit }}
-OnFailure={{ unit_on_failure }}
 ConditionUser={{ unit_condition_user }}
+{% if unit_on_failure %}
+OnFailure={{ unit_on_failure }}
+{% endif %}
 {% if unit_after %}
 OnSuccess={{ unit_on_success }}
 {% endif %}

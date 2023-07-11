@@ -1,6 +1,8 @@
 [Unit]
 Description={{ description }}
+{% if unit_on_failure %}
 OnFailure={{ unit_on_failure }}
+{% endif %}
 ConditionUser={{ unit_condition_user }}
 Before=slices.target
 
