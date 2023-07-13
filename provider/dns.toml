@@ -2,6 +2,18 @@ collection = "DnsProvider"
 path = "providers/dns"
 
 [[package]]
+name = "local"
+repository = "https://github.com/pintoflager/carburator-provider-dns-local.git"
+platforms = ["Client", "Server"]
+filter = ["Select=false"]
+
+[[package]]
+name = "template"
+repository = "https://github.com/pintoflager/carburator-provider-dns-template/archive/refs/tags/0.1.0.tar.gz"
+platforms = ["Client", "Server"]
+filter = ["Select=false"]
+
+[[package]]
 name = "hetzner"
 repository = "https://github.com/pintoflager/carburator-provider-dns-hetzner.git"
 platforms = ["Client", "Server"]
