@@ -12,6 +12,7 @@ exitcode_unrecoverable = 120
 
 [node]
 proxies = 2
+syscron = false
 
 [node.server]
 hostname_set = false
