@@ -1,39 +1,41 @@
 [Unit]
 Description={{ description }}
-{% if unit_on_failure %}
+{%- if unit_on_failure %}
 OnFailure={{ unit_on_failure }}
 {% endif %}
 ConditionUser={{ unit_condition_user }}
 Before=slices.target
 
 [Slice]
-{# CPU limiting #}
-{% if slice_cpu_weight or slice_cpu_quota %}
+{#- CPU limiting #}
+{%- if slice_cpu_weight or slice_cpu_quota %}
 CPUAccounting=true
 {% endif %}
-{% if slice_cpu_weight %}
+{%- if slice_cpu_weight %}
 CPUWeight={{ slice_cpu_weight }}
 {% endif %}
-{% if slice_cpu_quota %}
+{%- if slice_cpu_quota %}
 CPUQuota={{ slice_cpu_quota }}%
 {% endif %}
-{# RAM limiting #}
-{% if slice_memory_high or slice_memory_max %}
+{#- RAM limiting #}
+{%- if slice_memory_high or slice_memory_max %}
 MemoryAccounting=true
 {% endif %}
-{% if slice_memory_high %}
+{%- if slice_memory_high %}
 MemoryHigh={{ slice_memory_high }}
 {% endif %}
-{% if slice_memory_max %}
+{%- if slice_memory_max %}
 MemoryMax={{ slice_memory_max }}
 {% endif %}
-{# TODO: process limits (pids), input/output ops limits? #}
+{#- TODO: process limits (pids), input/output ops limits? #}
 
 [Install]
+{%- if not is_template %}
 WantedBy={{ install_wanted_by | default("multi-user.target") }}
-{% if install_required_by %}
+{%- if install_required_by %}
 RequiredBy={{ install_required_by }}
 {% endif %}
-{% if install_upheld_by %}
+{%- if install_upheld_by %}
 UpheldBy={{ install_upheld_by }}
+{% endif %}
 {% endif %}
