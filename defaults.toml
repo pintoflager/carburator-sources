@@ -1,4 +1,5 @@
 ssh_port = 22
+# Disables SSH login with username + password (only private/public key logins).
 ssh_password_auth = false
 
 [scripts]
@@ -11,7 +12,11 @@ exitcode_can_retry = 110
 exitcode_unrecoverable = 120
 
 [node]
+# Number of nodes to tag as 'proxies'. Only server nodes with public IP addresses
+# will be selected.
 proxies = 2
+# Disables remote node system crons and only systemd based carburator crons
+# can be used.
 syscron = false
 
 [node.server]

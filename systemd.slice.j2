@@ -7,7 +7,7 @@ ConditionUser={{ unit_condition_user }}
 Before=slices.target
 
 [Slice]
-{#- CPU limiting #}
+{# CPU limiting #}
 {%- if slice_cpu_weight or slice_cpu_quota %}
 CPUAccounting=true
 {% endif %}
@@ -17,7 +17,7 @@ CPUWeight={{ slice_cpu_weight }}
 {%- if slice_cpu_quota %}
 CPUQuota={{ slice_cpu_quota }}%
 {% endif %}
-{#- RAM limiting #}
+{# RAM limiting #}
 {%- if slice_memory_high or slice_memory_max %}
 MemoryAccounting=true
 {% endif %}
@@ -27,7 +27,7 @@ MemoryHigh={{ slice_memory_high }}
 {%- if slice_memory_max %}
 MemoryMax={{ slice_memory_max }}
 {% endif %}
-{#- TODO: process limits (pids), input/output ops limits? #}
+{# TODO: process limits (pids), input/output ops limits? #}
 
 [Install]
 {%- if not is_template %}
