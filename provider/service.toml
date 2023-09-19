@@ -17,3 +17,8 @@ filter = ["Select=false"]
 name = "hetzner"
 repository = "https://github.com/pintoflager/carburator-provider-service-hetzner.git"
 platforms = ["Client"]
+
+[[package]]
+name = "digitalocean"
+repository = "https://github.com/pintoflager/carburator-provider-service-digitalocean.git"
+platforms = ["Client"]
