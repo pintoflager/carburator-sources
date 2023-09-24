@@ -4,10 +4,10 @@ Requires={{ timer_exec_unit }}
 ConditionUser={{ unit_condition_user }}
 {%- if unit_on_failure %}
 OnFailure={{ unit_on_failure }}
-{% endif %}
+{%- endif %}
 {%- if unit_on_success %}
 OnSuccess={{ unit_on_success }}
-{% endif %}
+{%- endif %}
 
 [Timer]
 Unit={{ timer_exec_unit }}
@@ -19,16 +19,16 @@ OnTimezoneChange={{ timer_on_timezone_change | default("false") }}
 Persistent={{ timer_persistent | default("false") }}
 WakeSystem={{ timer_wake_system | default("false") }}
 RemainAfterElapse={{ timer_remain_after_elapse | default("true") }}
-{# Defines a timer relative to the moment the timer unit itself is activated. #}
+{#- Defines a timer relative to the moment the timer unit itself is activated. #}
 {%- if timer_on_active_sec %}
 OnActiveSec={{ timer_on_active_sec }}
-{% endif %}
-{# Defines a timer relative to when the machine was booted up. In containers, for the 
+{%- endif %}
+{#- Defines a timer relative to when the machine was booted up. In containers, for the 
 system manager instance, this is mapped to OnStartupSec=, making both equivalent. #}
 {%- if timer_on_boot_sec %}
 OnBootSec={{ timer_on_boot_sec }}
-{% endif %}
-{# Defines a timer relative to when the service manager was first started.
+{%- endif %}
+{#- Defines a timer relative to when the service manager was first started.
 For system timer units this is very similar to OnBootSec= as the system
 service manager is generally started very early at boot. It's primarily
 useful when configured in units running in the per-user service manager,
@@ -36,21 +36,21 @@ as the user service manager is generally started on first login only, not
 already during boot. #}
 {%- if timer_on_startup_sec %}
 OnStartupSec={{ timer_on_startup_sec }}
-{% endif %}
-{# Defines a timer relative to when the unit the timer unit is activating
+{%- endif %}
+{#- Defines a timer relative to when the unit the timer unit is activating
 was last activated. #}
 {%- if timer_on_unit_active_sec %}
 OnUnitActiveSec={{ timer_on_unit_active_sec }}
-{% endif %}
-{# Defines a timer relative to when the unit the timer unit is activating
+{%- endif %}
+{#- Defines a timer relative to when the unit the timer unit is activating
 was last deactivated. #}
 {%- if timer_on_unit_inactive_sec %}
 OnUnitInactiveSec={{ timer_on_unit_inactive_sec }}
-{% endif %}
-{# Defines realtime (i.e. wallclock) timers with calendar event expressions. #}
+{%- endif %}
+{#- Defines realtime (i.e. wallclock) timers with calendar event expressions. #}
 {%- if timer_on_calendar %}
 OnCalendar={{ timer_on_calendar }}
-{% endif %}
+{%- endif %}
 
 [Install]
 WantedBy=timers.target
