@@ -23,6 +23,8 @@ syscron = false
 hostname_set = false
 ipv4 = true
 ipv6 = true
+# Max number of database nodes for the project
+databases = 3
 cluster_names = ["apricot", "avocado", "banana", "blackberry",
 	"blueberry", "carambola", "cherry", "cloudberry", "coconut", "cranberry", "damson",
 	"dragonfruit", "elderberry", "feijoa", "fig", "grape", "grapefruit", "grapes", "grewia",
