@@ -7,9 +7,11 @@ register = "register"
 install = "install"
 update = "update"
 destroy = "destroy"
-exitcode_not_found = 100
-exitcode_can_retry = 110
-exitcode_unrecoverable = 120
+
+[scripts.exitcodes]
+missing = 100
+fallible = 110
+infallible = 120
 
 [node]
 # Number of nodes to tag as 'proxies'. Only server nodes with public IP addresses
