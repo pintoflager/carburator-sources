@@ -16,7 +16,7 @@ infallible = 120
 [node]
 # Number of nodes to tag as 'proxies'. Only server nodes with public IP addresses
 # will be selected.
-proxies = 2
+proxies = 3
 # Disables remote node system crons and only systemd based carburator crons
 # can be used.
 syscron = false
@@ -25,8 +25,6 @@ syscron = false
 hostname_set = false
 ipv4 = true
 ipv6 = true
-# Max number of database nodes for the project
-databases = 3
 cluster_names = ["apricot", "avocado", "banana", "blackberry",
 	"blueberry", "carambola", "cherry", "cloudberry", "coconut", "cranberry", "damson",
 	"dragonfruit", "elderberry", "feijoa", "fig", "grape", "grapefruit", "grapes", "grewia",
